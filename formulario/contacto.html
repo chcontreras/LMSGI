@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IES Pablo Serrano</title>
+    <link rel="shortcut icon" href="../imagenes/icono.jpg">
+</head>
+
+<body>
+    <h1>CONTACTANOS</h1>
+
+    <form action="mailto:chcontreras4@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Informacion Personal:</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introdusca su nombre" minlength="5" maxlength="40"
+                required="" pattern="[a-zA-Z]">
+            <br>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Introduzca su apellido" minlength="5"
+                maxlength="40" required="" pattern="[a-zA-Z]">
+            <br>
+            <label for="email">Correo de Contacto</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required="">
+            <br>
+            <label for="telefono">Nurmero telefono</label>
+            <input type="text" name="telefono" id="telefono" min="6" max="10" required="" pattern="[0-9]+">
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="asignatura">Asignatura</label>
+            <select name="asignatura" id="asignatura" aria-placeholder="Seleccione una asignatura">
+                <option value="">FOL</option>
+                <option value="">ISO</option>
+                <option value="">PAR</option>
+                <option value="">GBD</option>
+                <option value="">FDH</option>
+                <option value="">LMSGI</option>
+                <option value="">Ingles</option>
+            </select>
+            <br>
+            <label for="fecha">Fecha</label>
+            <input type="datetime-local" name="fecha" id="fecha">
+            <br>
+            <label for="descripcion">Motivo</label>
+            <br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10"
+                placeholder="Motivo de Contacto"></textarea>
+            <br>
+            <label for="">Aceptar terminos y condiciones</label>
+            <input type="checkbox" name="" id="" required="">
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </fieldset>
+    </form>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1490.7722694565198!2d-0.8647882857999151!3d41.64397534637838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd591456e9cf4daf%3A0xad2146ac86b49bc9!2sIES%20Pablo%20Serrano!5e0!3m2!1ses!2ses!4v1699780512323!5m2!1ses!2ses"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+
+</html>
